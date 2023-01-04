@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddTextToImage.Mvc", "AddTextToImage.Mvc\AddTextToImage.Mvc.csproj", "{BBB0A4E8-7293-426A-A3AF-CE0C7980ABA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBB0A4E8-7293-426A-A3AF-CE0C7980ABA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBB0A4E8-7293-426A-A3AF-CE0C7980ABA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBB0A4E8-7293-426A-A3AF-CE0C7980ABA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBB0A4E8-7293-426A-A3AF-CE0C7980ABA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DEB74056-2716-400B-AAF2-4C96290AD8E9}
+	EndGlobalSection
+EndGlobal
