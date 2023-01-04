@@ -1,11 +1,11 @@
 ﻿using AddTextToImage.Mvc.Models;
+using AddTextToImage.Mvc.Models.Home;
 using Microsoft.AspNetCore.Mvc;
 using SixLabors.Fonts;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Drawing.Processing;
 using SixLabors.ImageSharp.Processing;
 using System.Diagnostics;
-using System.Net.Mime;
 
 namespace AddTextToImage.Mvc.Controllers
 {
@@ -54,8 +54,8 @@ namespace AddTextToImage.Mvc.Controllers
 				img.Save(Path.Combine(downloadsPath));
 			}
 
-            ResultViewModel resultModel = new ResultViewModel();
-            resultModel.Path = "/images/paper-with-text.jpg";
+			ResultViewModel resultModel = new ResultViewModel();
+			resultModel.Path = "/images/paper-with-text.jpg";
 			return RedirectToAction("Result", resultModel);
 		}
 

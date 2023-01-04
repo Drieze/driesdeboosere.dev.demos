@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AddTextToImage.Mvc.Models
+namespace AddTextToImage.Mvc.Models.Home
 {
     public class ResultViewModel
     {

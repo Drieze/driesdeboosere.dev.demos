@@ -1,4 +1,4 @@
-namespace AddTextToImage.Mvc.Models
+namespace AddTextToImage.Mvc.Models.Home
 {
 	public class IndexViewModel
 	{
