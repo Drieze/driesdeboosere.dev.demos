@@ -1,0 +1,14 @@
+@model ResultViewModel
+
+@{
+	ViewData["Title"] = "Paper with our text";
+}
+
+<div class="container">
+	<div class="row"><h1>@ViewData["Title"]</h1></div>
+	<div class="row">
+		<div class="col-md-8 offset-md-2">
+			<img src="@Model.Path" class="img-fluid" />
+		</div>
+	</div>
+</div>
