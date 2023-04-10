@@ -2,16 +2,13 @@
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["DigitalOceanAppDeployment.Mvc.csproj", "."]
-RUN dotnet restore "./DigitalOceanAppDeployment.Mvc.csproj"
+COPY *.csproj .
+RUN dotnet restore
 COPY . .
-WORKDIR "/src/."
-RUN dotnet build "DigitalOceanAppDeployment.Mvc.csproj" -c Release -o /app/build
 
-FROM build AS publish
-RUN dotnet publish "DigitalOceanAppDeployment.Mvc.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish -c Release -o /app --no-restore
 
-FROM base AS final
+FROM mcr.microsoft.com/dotnet/aspnet:6.0
 WORKDIR /app
-COPY --from=publish /app/publish .
+COPY --from=publish /app/ ./
 ENTRYPOINT ["dotnet", "DigitalOceanAppDeployment.Mvc.dll"]
