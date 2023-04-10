@@ -3,10 +3,10 @@
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /source
 
-COPY *.csproj .
+COPY DigitalOceanAppDeployment.Mvc.csproj .
 RUN dotnet restore
 
-COPY . .
+COPY DigitalOceanAppDeployment.Mvc/ .
 
 RUN dotnet publish --no-restore -o /app 
 
