@@ -1,8 +1,8 @@
-﻿using DigitalOceanAppDeployment.Mvc.Models;
+﻿using DigitalOceanDeploymentDemo.Mvc.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace DigitalOceanAppDeployment.Mvc.Controllers
+namespace DigitalOceanDeploymentDemo.Mvc.Controllers
 {
     public class HomeController : Controller
     {

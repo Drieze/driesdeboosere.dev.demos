@@ -1,4 +1,4 @@
-namespace DigitalOceanAppDeployment.Mvc.Models
+namespace DigitalOceanDeploymentDemo.Mvc.Models
 {
     public class ErrorViewModel
     {
